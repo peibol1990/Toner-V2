@@ -27,9 +27,10 @@
 
             .fondoBlanco{
                 background-color: white;
-            }
+            }        
+
             
-            @media (max-width:480px) {
+            
                 .contPpal {
                     display: grid;
                     background-color: #404C30;
@@ -41,7 +42,7 @@
                 .encabezado {
                     display: flex;
                     flex-direction: column;
-                    flex-wrap: nowrap;
+                    flex-wrap: wrap;
                     grid-area: header;
                     align-items: center;
                 }
@@ -109,7 +110,7 @@
                 .galeria li img {
                     width: 100%;
                     height: 100%;
-                    flex-wrap: nowrap;
+                    flex-wrap: wrap;
                 }
 
                 .formulario{                    
@@ -117,7 +118,7 @@
                     align-items: center;
                     justify-content: center;
                     flex-direction: column;
-                    flex-wrap: nowrap;
+                    flex-wrap: wrap;
                     align-content: center;
                 }
 
@@ -131,7 +132,7 @@
                     display: flex;
                     display: flex;
                     flex-direction: column;
-                    flex-wrap: nowrap;
+                    flex-wrap: wrap;
                     align-content: stretch;
                     justify-content: space-evenly;
                     align-items: center;
@@ -147,7 +148,7 @@
                     margin-top: 20px;
                     display: flex;
                     flex-direction: row;
-                    flex-wrap: nowrap;
+                    flex-wrap: wrap;
                     align-content: stretch;
                     justify-content: space-evenly;
                     align-items: stretch;
@@ -161,10 +162,10 @@
 
                 
 
-            }                      
+                                  
            
             
-            @media(min-width:768px) and (max-width:1024px) {
+            @media screen and (min-width:768px) and (max-width:1024px){
                 .contPpal {
                     width: 100%;
                     display: grid;
@@ -193,7 +194,7 @@
                 .encabezado {
                     display: flex;
                     flex-direction: column;
-                    flex-wrap: nowrap;
+                    flex-wrap: wrap;
                     grid-area: header;
                     align-items: center;
                 }
@@ -250,7 +251,7 @@
                 .galeria li img {
                     width: 100%;
                     height: 100%;
-                    flex-wrap: nowrap;
+                    flex-wrap: wrap;
                 }
                 .fotoEmpresa img {
                     width: 100%;
@@ -266,7 +267,7 @@
                     display: flex;
                     grid-area: formulario;
                     flex-direction: column;
-                    flex-wrap: nowrap;
+                    flex-wrap: wrap;
                     align-items: center;
                 }
 
@@ -278,6 +279,8 @@
                 }
 
                 .ubicacion iframe{
+                    display:flex;
+                    flex-wrap:wrap;                    
                     margin-right: 20px;
                     width: 100%;
                     height: 100%;
@@ -287,7 +290,7 @@
                     display: flex;
                     grid-area: redes;
                     flex-direction: column;
-                    flex-wrap: nowrap;
+                    flex-wrap: wrap;
                     align-content: flex-start;
                     justify-content: space-between;
                     align-items: center;
@@ -297,7 +300,6 @@
 
             }
 
-            /*
             @media(min-width:1024px) {
                 .contPpal{
                 display:grid;
@@ -314,7 +316,7 @@
                 .encabezado {
                     display: flex;
                     flex-direction: column;
-                    flex-wrap: nowrap;
+                    flex-wrap: wrap;
                     grid-area: header;
                     align-items: center;
                 }
@@ -373,7 +375,7 @@
                 .galeria li img {
                     width: 100%;
                     height: 100%;
-                    flex-wrap: nowrap;
+                    flex-wrap: wrap;
                 }
                 .fotoEmpresa img {
                     width: 100%;
@@ -387,4 +389,4 @@
 
 
             }
-            */
+            
