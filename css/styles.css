@@ -6,7 +6,7 @@
   text-decoration: none;
   list-style: none;
   color: #F9FEFA;
-  background-color: verdeOscu;
+  background-color: #585F4F;
   font-family: 'Vazirmatn', sans-serif; }
 
 .encabezado {
@@ -19,10 +19,10 @@
     animation-iteration-count: infinite;
     animation-duration: 3s; }
   .encabezado nav ul li {
-    background-color: verdeOscu;
+    background-color: #585F4F;
     padding: 0px; }
     .encabezado nav ul li a {
-      background-color: amarilloOsc;
+      background-color: #E6E29B;
       padding: 0px; }
 
 @keyframes rotacion {
@@ -42,11 +42,11 @@
     opacity: 100%; } }
 
 .menu {
-  background-color: verdeClaro; }
+  background-color: #404C30; }
 
 .section__title {
   display: flex;
-  color: amarilloOsc;
+  color: #E6E29B;
   justify-content: center;
   padding-bottom: 0.5em;
   padding-top: 0.5em;
@@ -62,16 +62,16 @@
   justify-content: stretch; }
 
 .row .contenido {
-  background-image: linear-gradient(to left, verdeClaro, verdeOscu);
+  background-image: linear-gradient(to left, #404C30, #585F4F);
   margin: 0; }
 
 .row .section1 {
-  background-image: linear-gradient(to left, verdeClaro, verdeOscu);
+  background-image: linear-gradient(to left, #404C30, #585F4F);
   margin: 0;
   padding: 0; }
 
 .row .section2 {
-  background-image: linear-gradient(to right, verdeClaro, verdeOscu);
+  background-image: linear-gradient(to right, #404C30, #585F4F);
   margin: 0;
   padding: 0; }
 
@@ -80,11 +80,11 @@
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(2, 0.6fr);
   align-items: stretch;
-  border: solid 3px amarilloOsc;
+  border: solid 3px #E6E29B;
   margin: 0;
   padding: 0; }
   .row .section3 .galeria li {
-    border: solid 2px amarilloOsc;
+    border: solid 2px #E6E29B;
     width: 100%;
     height: 100%; }
     .row .section3 .galeria li img {
@@ -125,7 +125,7 @@
   justify-content: center; }
 
 .pieDePagina {
-  border: solid 3px amarilloOsc;
+  border: solid 3px #E6E29B;
   text-align: center;
   margin-top: 47px;
   margin-left: 5px;
