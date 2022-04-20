@@ -1,0 +1,110 @@
+@import "variables";
+@import "global";
+@import "encabezado";
+.menu {
+    background-color: verdeClaro;
+}
+
+.section__title {
+    display: flex;
+    color: amarilloOsc;
+    justify-content: center;
+    padding-bottom: 0.5em;
+    padding-top: 0.5em;
+    margin: 0em;
+}
+
+.row {
+    .parrafo {
+        text-align: justify;
+        font-weight: bold;
+        padding-left: 1.5em;
+        padding-right: 0.5em;
+        padding-bottom: 0em;
+        margin: 0;
+        justify-content: stretch;
+    }
+    .contenido {
+        background-image: linear-gradient(to left, verdeClaro, verdeOscu);
+        margin: 0;
+    }
+    .section1 {
+        background-image: linear-gradient(to left, verdeClaro, verdeOscu);
+        margin: 0;
+        padding: 0;
+    }
+    .section2 {
+        background-image: linear-gradient(to right, verdeClaro, verdeOscu);
+        margin: 0;
+        padding: 0;
+    }
+    .section3 {
+        .galeria {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            grid-template-rows: repeat(2, 0.6fr);
+            align-items: stretch;
+            border: solid 3px amarilloOsc;
+            margin: 0;
+            padding: 0;
+            li {
+                border: solid 2px amarilloOsc;
+                width: 100%;
+                height: 100%;
+                img {
+                    width: 100%;
+                    height: 100%;
+                    flex-wrap: wrap;
+                }
+            }
+        }
+    }
+}
+
+.fondoBlanco {
+    background-color: white;
+}
+
+.formulario {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    section {
+        color: white;
+        margin-top: 5px;
+    }
+}
+
+.ubicacion {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: stretch;
+    align-items: center;
+}
+
+.redes {
+    .iconos {
+        text-align: center;
+    }
+    img {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+.carrusel {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.pieDePagina {
+    border: solid 3px amarilloOsc;
+    text-align: center;
+    margin-top: 47px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
