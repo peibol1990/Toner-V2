@@ -1,12 +1,12 @@
-@import "variables";
 @import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@200&display=swap');
+@import "variables";
 * {
-    padding: 0;
-    margin: 0;
+    padding: map-get($medidasIniciales, pad);
+    margin: map-get($medidasIniciales, marg);
     font-style: none;
     text-decoration: none;
     list-style: none;
-    color: #F9FEFA;
-    background-color: $verdeOscu;
+    color: map-get($colores, verdeTransp);
+    background-color: map-get($colores, verdeOscu);
     font-family: 'Vazirmatn', sans-serif;
 }

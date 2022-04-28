@@ -11,10 +11,10 @@
         nav {
             ul {
                 li {
-                    background-color: $verdeOscu;
+                    background-color: map-get($colores, verdeOscu);
                     padding: 0px;
                     a {
-                        background-color: $amarilloOsc;
+                        background-color: map-get($colores, amarilloOsc);
                         padding: 0px;
                     }
                 }

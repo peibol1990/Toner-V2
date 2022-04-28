@@ -2,12 +2,12 @@
 @import "global";
 @import "encabezado";
 .menu {
-    background-color: $verdeClaro;
+    background-color: map-get($colores, verdeClaro);
 }
 
 .section__title {
     display: flex;
-    color: $amarilloOsc;
+    color: map-get($colores, amarilloOsc);
     justify-content: center;
     padding-bottom: 0.5em;
     padding-top: 0.5em;
@@ -25,18 +25,16 @@
         justify-content: stretch;
     }
     .contenido {
-        background-image: linear-gradient(to left, $verdeClaro, $verdeOscu);
+        background-image: linear-gradient(to left, map-get($colores, verdeClaro), map-get($colores, verdeOscu));
         margin: 0;
     }
     .section1 {
-        background-image: linear-gradient(to left, $verdeClaro, $verdeOscu);
-        margin: 0;
-        padding: 0;
+        background-image: linear-gradient(to left, map-get($colores, verdeClaro), map-get($colores, verdeOscu));
+        @include medidasCero(0, 0);
     }
     .section2 {
-        background-image: linear-gradient(to right, $verdeClaro, $verdeOscu);
-        margin: 0;
-        padding: 0;
+        background-image: linear-gradient(to right, map-get($colores, verdeClaro), map-get($colores, verdeOscu));
+        @include medidasCero(0, 0);
     }
     .section3 {
         .galeria {
@@ -44,16 +42,15 @@
             grid-template-columns: repeat(5, 1fr);
             grid-template-rows: repeat(2, 0.6fr);
             align-items: stretch;
-            border: solid 3px $amarilloOsc;
-            margin: 0;
-            padding: 0;
+            border: solid 3px map-get($colores, amarilloOsc);
+            @include medidasCero(0, 0);
             li {
-                border: solid 2px $amarilloOsc;
-                width: 100%;
-                height: 100%;
+                border: solid 2px map-get($colores, amarilloOsc);
+                width: map-get($medidasImagenes, ancho);
+                height: map-get($medidasImagenes, alto);
                 img {
-                    width: 100%;
-                    height: 100%;
+                    width: map-get($medidasImagenes, ancho);
+                    height: map-get($medidasImagenes, alto);
                     flex-wrap: wrap;
                 }
             }
@@ -62,16 +59,29 @@
 }
 
 .fondoBlanco {
-    background-color: white;
+    background-color: map-get($colores, blanco);
 }
 
 .formulario {
     text-align: center;
-    margin: 0;
-    padding: 0;
+    @include medidasCero(0, 0);
     section {
-        color: white;
+        color: map-get($colores, blanco);
         margin-top: 5px;
+        .formatInput {
+            color: map-get($colores, verdeOscu);
+            border: solid 2px map-get($colores, amarilloOsc);
+            text-align: left;
+            background-color: map-get($colores, verdeTransp);
+            .formatInput--nomAp {
+                @extend .formatInput;
+                color: map-get($colores, amarilloOsc);
+            }
+            .formatInput--mail {
+                @extend .formatInput;
+                font-weight: bold;
+            }
+        }
     }
 }
 
@@ -89,20 +99,19 @@
         text-align: center;
     }
     img {
-        width: 50px;
-        height: 50px;
+        width: map-get($medidasIconos, ancho);
+        height: map-get($medidasIconos, alto);
     }
 }
 
 .carrusel {
-    margin: 0;
-    padding: 0;
+    @include medidasCero(0, 0);
     display: flex;
     justify-content: center;
 }
 
 .pieDePagina {
-    border: solid 3px $amarilloOsc;
+    border: solid 3px map-get($colores, amarilloOsc);
     text-align: center;
     margin-top: 47px;
     margin-left: 5px;

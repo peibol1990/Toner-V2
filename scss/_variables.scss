@@ -1,3 +1,8 @@
-$verdeOscu:#585F4F;
-$verdeClaro:#404C30;
-$amarilloOsc: #E6E29B;
+$colores:( verdeOscu:#585F4F, verdeClaro:#404C30, amarilloOsc: #E6E29B, verdeTransp: #F9FEFA, blanco:white);
+$medidasIniciales:( pad:0, marg:0);
+$medidasImagenes:( ancho:100%, alto:100%);
+$medidasIconos:( alto:50px, ancho:50px);
+@mixin medidasCero($pad, $marg) {
+    padding: $pad;
+    margin: $marg;
+}
